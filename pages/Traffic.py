@@ -84,7 +84,7 @@ with tab1:
         medium_users = df.groupby('new_medium')['Users'].sum()
         fig = go.Figure(data=go.Bar(x=medium_users.index, y=medium_users))
         fig.update_layout(
-            title="Phân bổ Users theo Medium",
+            title="Partitions Users by Medium",
             xaxis_title="new_medium",
             yaxis_title="Users",
         )
@@ -93,7 +93,7 @@ with tab1:
         medium_users = df.groupby('new_medium')['Users'].sum()
         fig = go.Figure(data=go.Pie(labels=medium_users.index, values=medium_users))
         fig.update_layout(
-            title="Phân bổ Users theo Medium",
+            title="Partitions Users by Medium",
             showlegend=True,
         )
         st.plotly_chart(fig,use_container_width=True,height=800)
@@ -103,7 +103,7 @@ with tab2:
         medium_users = df.groupby('new_medium')['New Users'].sum()
         fig = go.Figure(data=go.Bar(x=medium_users.index, y=medium_users))
         fig.update_layout(
-            title="Phân bổ New Users theo Medium",
+            title="Partitions New Users by Medium",
             xaxis_title="new_medium",
             yaxis_title="New Users",
         )
@@ -112,7 +112,7 @@ with tab2:
         medium_users = df.groupby('new_medium')['New Users'].sum()
         fig = go.Figure(data=go.Pie(labels=medium_users.index, values=medium_users))
         fig.update_layout(
-            title="Phân bổ New Users theo Medium",
+            title="Partitions New Users by Medium",
             showlegend=True,
         )
         st.plotly_chart(fig,use_container_width=True,height=800)
@@ -141,7 +141,7 @@ with tab4:
         medium_users = df.groupby('new_medium')['Transactions'].sum()
         fig = go.Figure(data=go.Bar(x=medium_users.index, y=medium_users))
         fig.update_layout(
-            title="Phân bổ Transactions theo Medium",
+            title="Partitions Transactions by Medium",
             xaxis_title="new_medium",
             yaxis_title="Transactions",
         )
@@ -150,7 +150,7 @@ with tab4:
         medium_users = df.groupby('new_medium')['Transactions'].sum()
         fig = go.Figure(data=go.Pie(labels=medium_users.index, values=medium_users))
         fig.update_layout(
-            title="Phân bổ Transactions theo Medium",
+            title="Partitions Transactions by Medium",
             showlegend=True,
         )
         st.plotly_chart(fig,use_container_width=True,height=800)
@@ -160,7 +160,7 @@ with tab5:
         medium_users = df.groupby('new_medium')['Revenue'].sum()
         fig = go.Figure(data=go.Bar(x=medium_users.index, y=medium_users))
         fig.update_layout(
-            title="PRevenue theo Medium",
+            title="Partitions Revenue by Medium",
             xaxis_title="new_medium",
             yaxis_title="Revenue",
         )
@@ -169,7 +169,7 @@ with tab5:
         medium_users = df.groupby('new_medium')['Revenue'].sum()
         fig = go.Figure(data=go.Pie(labels=medium_users.index, values=medium_users))
         fig.update_layout(
-            title="Phân bổ Revenue theo Medium",
+            title="Partitions Revenue by Medium",
             showlegend=True,
         )
         st.plotly_chart(fig,use_container_width=True,height=800)
