@@ -122,7 +122,7 @@ with tab3:
         medium_users = df.groupby('new_medium')['Sessions'].sum()
         fig = go.Figure(data=go.Bar(x=medium_users.index, y=medium_users))
         fig.update_layout(
-            title="Phân bổ Sessions theo Medium",
+            title="Partitions Sessions by Medium",
             xaxis_title="new_medium",
             yaxis_title="Sessions",
         )
@@ -131,7 +131,7 @@ with tab3:
         medium_users = df.groupby('new_medium')['Sessions'].sum()
         fig = go.Figure(data=go.Pie(labels=medium_users.index, values=medium_users))
         fig.update_layout(
-            title="Phân bổ Sessions theo Medium",
+            title="Partitions Sessions by Medium",
             showlegend=True,
         )
         st.plotly_chart(fig,use_container_width=True,height=800)

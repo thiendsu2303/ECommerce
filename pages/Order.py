@@ -452,6 +452,7 @@ st.info("""**Key findings**:
 - The shipping fee allocation of canceled orders vs completed orders are similar.
 - The highest price of COMPLETED orders is less than 200k but for CANCELLED orders, there are more orders appearing over 200k and the highest price is close to 400k.
 - Above 100k there are more CANCELLED singles.
+
 **Propose:**
 - Lower shipping fees to help reduce CACELLED orders.
 """, icon="📝")
