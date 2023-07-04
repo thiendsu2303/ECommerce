@@ -177,7 +177,10 @@ st.info("""**Key findings**:
 - Transactions =  New users * Conversion rate
 ⇒ To improve the quantity of transactions, we have to improve 2 metrics: Number of new users & Conversion rate.
 - There are slightly different between the medium allocation in the number of transactions and new users.
+- Pretty low conversion rate.
 
 **Propose:**
 - Improving new users of medium accounts for most of the revenue. 
+- Improve conversion rate by SEO, SEM, targeting ads.
+- Improve conversion rate to range 2 - 3%.
 """, icon="📝")
