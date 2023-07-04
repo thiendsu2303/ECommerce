@@ -329,6 +329,7 @@ st.plotly_chart(fig,use_container_width=True,height=800)
 st.info("""**Key findings**: 
 - The number of orders, the quantity of products sold, and the revenue generated from payment methods are directly related to each other. There is no occurrence of a situation where there are low sales in terms of orders but high revenue.
 - Cash on Delivery represents approximately 90% of the overall orders, encompassing the quantity of products sold and the selling price collected in both COMPLETED and CANCELLED order statuses.
+
 **Propose:**
 - By utilizing the Cash on Delivery payment method, we have the opportunity to enhance the quantity of canceled orders. This improvement in order numbers contributes to achieving a high conversion rate, particularly when transitioning from CANCELLED units to COMPLETED units.
 - Improve the quality of transportation such as: faster delivery, synchronization of the delivery process, ... so that the time for customers to change their decision to buy or not is reduced.
@@ -431,6 +432,7 @@ with date_tab3:
 st.info("""**Key findings**: 
 - Sales in period 10 - 12 is higher, especially in 12th, the selling price of orders peak nearly 2.5B, 6 times than the previous day and 5 times than average.
 - One week in a row from the 18th to the 25th, the sales are all lower than 200M.
+
 **Propose:**
 - To boost sales, it is proposed to run a one-week promotional campaign starting from the 18th and ending on the 25th, with the objective of achieving a sales target in the range of 700 million to 800 million.
 """, icon="📝")
